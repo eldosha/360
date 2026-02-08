@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>360° Tour - Eiffel Tower</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: #0a1e3a;
+    color: white;
+    text-align: center;
+    padding: 60px 10px 20px 10px;
+  }
+  header small {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    margin: 6px 0 0 0;
+  }
+  main {
+    max-width: 900px;
+    margin: 60px auto 60px auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .tour-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    margin: 0 auto 40px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgb(0 0 0 / 0.15);
+  }
+  iframe, video {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  button.more-desc {
+    background: #0a1e3a;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s ease;
+  }
+  button.more-desc:hover {
+    background: #142f5a;
+  }
+  footer {
+    background: #0a1e3a;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    font-size: 14px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
 
+<header>
+  <small>Powered by</small>
+  <h1>A&S Entertainment Holding</h1>
+</header>
+
+<main>
+  <h2>Eiffel Tower 360° Virtual Tour</h2>
+  <div class="tour-container" id="tour">
+    <!-- Placeholder for 360 tour -->
+    <!-- You can replace with real 360 embed or VR player -->
+    <iframe src="https://poly.google.com/view/6kDRQ66w5q9/embed" allowfullscreen loading="lazy" title="Eiffel Tower 3D Model"></iframe>
+  </div>
+
+  <button class="more-desc" onclick="window.open('https://wiki.aandsglobal.com/EiffelTower', '_blank')">More Description</button>
+</main>
+
+<footer>
+  Instagram: <a href="https://instagram.com/aandsholding" target="_blank">@aandsholding</a>
+</footer>
+
+</body>
+</html>
